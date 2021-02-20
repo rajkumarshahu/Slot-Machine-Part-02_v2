@@ -301,10 +301,10 @@
             </objects>
             <point key="canvasLocation" x="528.98550724637687" y="91.741071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Help View Controller-->
         <scene sceneID="Fpe-VF-3r2">
             <objects>
-                <viewController id="tFy-Qd-Cb9" sceneMemberID="viewController">
+                <viewController id="tFy-Qd-Cb9" customClass="HelpViewController" customModule="Slot_Machine_Part_02_v2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cp5-Mv-QN6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,6 +337,7 @@
                                 <state key="normal" image="􀅵"/>
                                 <connections>
                                     <action selector="btnHelp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8IQ-Y7-GPY"/>
+                                    <action selector="helpButtonTapped:" destination="tFy-Qd-Cb9" eventType="touchUpInside" id="678-eF-qa7"/>
                                     <segue destination="m2m-wI-CgI" kind="show" id="PiW-Wy-wsB"/>
                                 </connections>
                             </button>

@@ -68,23 +68,23 @@ class ViewController: UIViewController {
     
     @IBAction func quitButton(_ sender: UIButton) {
         let quitAlert = UIAlertController(title: "Quit", message: "Do you really want to quit?.", preferredStyle: UIAlertController.Style.alert)
-                
-                quitAlert.addAction(UIAlertAction(title: "Quit", style: .destructive, handler: { (action: UIAlertAction!) in
-                    exit(0)
-                }))
-                
-                quitAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
-                    print("Cancelled")
-                }))
-                
-                present(quitAlert, animated: true, completion: nil)
+        
+        quitAlert.addAction(UIAlertAction(title: "Quit", style: .destructive, handler: { (action: UIAlertAction!) in
+            exit(0)
+        }))
+        
+        quitAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Cancelled")
+        }))
+        
+        present(quitAlert, animated: true, completion: nil)
         
     }
     
     @IBAction func btnSpin(_ sender: UIButton) {
         
         updateImages()
-
+        
         self.setupSpinAreaAnimation(spinColumn: spinAreaAnimation, duration: 0.01, delay: 0.01, type: "bounceUp")
         
         balance = balance - bet
@@ -133,7 +133,7 @@ class ViewController: UIViewController {
             balance += 10
             decreaseButtonImage.isEnabled = true
             if bet > balance {
-            spinButtonImage.isEnabled = false
+                spinButtonImage.isEnabled = false
             } else {
                 spinButtonImage.isEnabled = true
                 increaseBtnImage.isEnabled = true
@@ -146,23 +146,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func btnHelp(_ sender: UIButton) {
-        
+        playSound(sound: "casino-chips", type: "mp3")
         
     }
     
-
+    
     // MARK: - reset Function
-
+    
     func reset() {
-        balance = 2000
+        balance = 1000
         bet = 10
         spinButtonImage.isEnabled = true
         decreaseButtonImage.isEnabled = true
         increaseBtnImage.isEnabled = true
         jackpotImage.image = nil
-        
-        
-        
         jackPotLabel.text = "1000"
         jackpotLineImage.image = nil
         firstImage.image = UIImage(named: "bell")
@@ -183,20 +180,20 @@ class ViewController: UIViewController {
     
     func updateImages () {
         
-        let seven = [String](repeating: "seven", count: 1140)
-        let bell = [String](repeating: "bell", count: 50)
-        let cherry = [String](repeating: "cherry", count: 55)
-        let crown = [String](repeating: "crown", count: 57)
-        let diamond = [String](repeating: "diamond", count: 60)
-        let leaf = [String](repeating: "leaf", count: 70)
-        let magnet = [String](repeating: "magnet", count: 80)
-        let star = [String](repeating: "star", count: 90)
-        let strawberry = [String](repeating: "strawberry", count: 100)
-        let watermelon = [String](repeating: "watermelon", count: 120)
+        let seven = [String](repeating: "seven", count: 40) // 5.5%
+        let bell = [String](repeating: "bell", count: 50) // 7%
+        let cherry = [String](repeating: "cherry", count: 55) // 7.6%
+        let crown = [String](repeating: "crown", count: 57) // 7.9%
+        let diamond = [String](repeating: "diamond", count: 60) // 8.3%
+        let leaf = [String](repeating: "leaf", count: 70) // 9.7%
+        let magnet = [String](repeating: "magnet", count: 80) // 11%
+        let star = [String](repeating: "star", count: 90) // 12.5
+        let strawberry = [String](repeating: "strawberry", count: 100) // 13.9
+        let watermelon = [String](repeating: "watermelon", count: 120) // 16.7
         
         
         let imageList = seven + bell + cherry + crown + diamond + leaf + magnet + star + strawberry + watermelon
-            
+        
         firstImage.image = UIImage(named: imageList.randomElement()!)
         secondImage.image = UIImage(named: imageList.randomElement()!)
         thirdImage.image = UIImage(named: imageList.randomElement()!)

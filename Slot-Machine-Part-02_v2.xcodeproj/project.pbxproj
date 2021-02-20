@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F5678ACCC7C02C33F5BEB06 /* Pods_Slot_Machine_Part_02_v2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50386A2E9BE222E05CC09677 /* Pods_Slot_Machine_Part_02_v2.framework */; };
+		EB156AC025DA19EC002BCFEF /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB156ABF25DA19EC002BCFEF /* HelpViewController.swift */; };
 		EBC1DD5D25D8187E009BD660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1DD5C25D8187E009BD660 /* AppDelegate.swift */; };
 		EBC1DD5F25D8187E009BD660 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1DD5E25D8187E009BD660 /* SceneDelegate.swift */; };
 		EBC1DD6125D8187E009BD660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1DD6025D8187E009BD660 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		2D68F3C6CD6629A215E537C7 /* Pods-Slot-Machine-Part-02_v2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slot-Machine-Part-02_v2.release.xcconfig"; path = "Target Support Files/Pods-Slot-Machine-Part-02_v2/Pods-Slot-Machine-Part-02_v2.release.xcconfig"; sourceTree = "<group>"; };
 		50386A2E9BE222E05CC09677 /* Pods_Slot_Machine_Part_02_v2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Slot_Machine_Part_02_v2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C31FB00494822C281C3FD17 /* Pods-Slot-Machine-Part-02_v2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Slot-Machine-Part-02_v2.debug.xcconfig"; path = "Target Support Files/Pods-Slot-Machine-Part-02_v2/Pods-Slot-Machine-Part-02_v2.debug.xcconfig"; sourceTree = "<group>"; };
+		EB156ABF25DA19EC002BCFEF /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		EBC1DD5925D8187E009BD660 /* Slot-Machine-Part-02_v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Slot-Machine-Part-02_v2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBC1DD5C25D8187E009BD660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBC1DD5E25D8187E009BD660 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				EBC1DD6525D81881009BD660 /* Assets.xcassets */,
 				EBC1DD6725D81881009BD660 /* LaunchScreen.storyboard */,
 				EBC1DD6A25D81881009BD660 /* Info.plist */,
+				EB156ABF25DA19EC002BCFEF /* HelpViewController.swift */,
 			);
 			path = "Slot-Machine-Part-02_v2";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				EBC1DD6125D8187E009BD660 /* ViewController.swift in Sources */,
 				EBC1DD5D25D8187E009BD660 /* AppDelegate.swift in Sources */,
 				EBC1DD5F25D8187E009BD660 /* SceneDelegate.swift in Sources */,
+				EB156AC025DA19EC002BCFEF /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
